@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "description": "Website powering me.florian-rappl.de",
+  "type": "module",
+  "scripts": {
+    "start": "http-server dist",
+    "build": "node build.mjs"
+  },
+  "keywords": [],
+  "author": "Florian Rappl",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "cssnano": "^7.0.6",
+    "esbuild": "^0.24.2",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
