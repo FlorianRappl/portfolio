@@ -3,8 +3,9 @@
   "description": "Website powering me.florian-rappl.de",
   "type": "module",
   "scripts": {
-    "start": "http-server dist",
-    "build": "node build.mjs"
+    "start": "node tools/watch.mjs",
+    "preview": "http-server dist",
+    "build": "node tools/build.mjs"
   },
   "keywords": [],
   "author": "Florian Rappl",

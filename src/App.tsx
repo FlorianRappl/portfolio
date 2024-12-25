@@ -3,6 +3,7 @@ import ProjectsGrid from "./components/ProjectsGrid";
 import LinksGrid from "./components/LinksGrid";
 import TalksGrid from "./components/TalksGrid";
 import ArticlesGrid from "./components/ArticlesGrid";
+import BooksGrid from "./components/BooksGrid";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <head>
         <meta charSet="utf8" />
         <title>Florian Rappl, Solutions Architect</title>
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
@@ -20,6 +22,7 @@ export default function App() {
             <ProjectsGrid />
             <TalksGrid />
             <ArticlesGrid />
+            <BooksGrid />
           </div>
         </main>
       </body>

@@ -60,13 +60,15 @@ export default function ArticlesGrid() {
             key={index}
             className="bg-white shadow-lg rounded-lg overflow-hidden"
           >
-            <img
-              src={article.image}
-              alt={article.title}
-              width={300}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
+            <a href={article.link} target="_blank">
+              <img
+                src={article.image}
+                alt={article.title}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
+            </a>
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
               <p className="text-gray-600">{article.description}</p>

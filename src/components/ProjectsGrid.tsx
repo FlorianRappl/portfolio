@@ -59,13 +59,15 @@ export default function ProjectsGrid() {
             key={index}
             className="bg-white shadow-lg rounded-lg overflow-hidden"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              width={300}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
+            <a href={project.link} target="_blank">
+              <img
+                src={project.image}
+                alt={project.title}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
+            </a>
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600">{project.description}</p>

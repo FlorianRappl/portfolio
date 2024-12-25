@@ -4,7 +4,7 @@ import App from "./App";
 
 function render() {
   const content = renderToStaticMarkup(<App />);
-  return `<!DOCTYPE html>\n${content}`;
+  return `<!DOCTYPE html>${content}`;
 }
 
 export { render, cssContent };

@@ -18,7 +18,7 @@ const links = [
   { name: "GitHub", icon: Github, url: "https://github.com/FlorianRappl" },
   { name: "Twitter", icon: Twitter, url: "https://twitter.com/FlorianRappl" },
   {
-    name: "Bluesky",
+    name: "BlueSky",
     icon: Cloud,
     url: "https://bsky.app/profile/florianrappl.bsky.social",
   },
@@ -29,11 +29,11 @@ const links = [
   },
   { name: "Xing", icon: X, url: "https://www.xing.com/profile/Florian_Rappl2" },
   {
-    name: "Stack Overflow",
+    name: "StackOverflow",
     icon: StackOverflow,
     url: "https://stackoverflow.com/users/1306682/florian-rappl",
   },
-  { name: "Dev.to", icon: FileCode2, url: "https://dev.to/florianrappl" },
+  { name: "dev.to", icon: FileCode2, url: "https://dev.to/florianrappl" },
 ];
 
 export default function LinksGrid() {
