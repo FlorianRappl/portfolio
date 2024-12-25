@@ -18,6 +18,7 @@ const result = await build({
   },
   metafile: true,
   loader: {
+    ".css": "text",
     ".png": "file",
     ".jpg": "file",
   },
@@ -25,22 +26,8 @@ const result = await build({
 
 const files = result.metafile.outputs;
 const require = createRequire(import.meta.url);
-const cssContent = `@font-face {
-  font-family: "Geist Sans";
-  src: url("/Geist-Variable.woff2") format("woff2-variations");
-  font-weight: 100 900;
-}
 
-html {
-  --font-geist-sans: "Geist Sans";
-}
-    
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-`;
-
-const { render } = require("./lib/index.cjs");
+const { render, cssContent } = require("./lib/index.cjs");
 
 const index = {
   html: render(),
